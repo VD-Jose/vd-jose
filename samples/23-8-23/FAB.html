@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .split-container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            
+            
+        }
+        .left-screen{
+            flex: 1;
+            padding: 20px;
+            background: #872657;
+            background: url(https://www.udacity.com/blog/wp-content/uploads/2020/05/softwareengineer-compress.jpeg);
+            filter:sepia(100%);
+            background-size: cover;
+            height: 100%;
+            background-position: 50% 15%;
+            min-height: 450px;
+        }
+        .right-screen{
+            flex: 1;
+            height: 100vh;
+        }
+        .cont{
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .cont nav{
+            flex: 1;
+            display: flex;
+            border-bottom: 1px solid;
+        }
+        .cont .design{
+            display: flex;
+            flex: 8;
+            background: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        footer{
+            flex: 1;
+            background: white;
+            border-top: 1px solid; 
+        }
+        footer ul{
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            padding-left: 0;
+            cursor: pointer;
+        }
+        .des-wrk{
+            display: flex;
+            flex-direction: column;
+        }
+        .des-wrk button{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: white;
+            border: 1px solid;
+            outline: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .des-wrk button:hover{
+            background: black;
+            color: white;
+        }
+        .left{
+            padding-left: 10px;
+            cursor: pointer;
+        }
+        .left a{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="split-container">
+        <div class="left-screen">
+            <h1>SPLIT</h1>
+        </div>
+        <div class="right-screen">
+            <div class="cont">
+            <nav class="nav-one">
+                <div class="left">
+                    <h2> <a href="#">SCREEN</a></h2>
+                </div>
+                <div class="right">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+                <div class="design">
+                    <div class="des-wrk">
+                        <h1>A designer <br> who creates shit <br>that somehow works!</h1>
+                    <button>See my works</button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <ul>
+                    <li>About Me</li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
