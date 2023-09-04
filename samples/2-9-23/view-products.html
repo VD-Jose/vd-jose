@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .column {
+            flex: 1;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: transform 0.3s, filter 0.3s;
+            /* Add smooth transitions */
+            filter: blur(4px);
+            /* Apply initial blur effect */
+        }
+
+        .column.left {
+            background-image: url('https://as1.ftcdn.net/v2/jpg/01/82/06/94/1000_F_182069472_d7Zzlld43mfUDvW1TDnPxs4phKuMVR7y.jpg');
+            background-size: cover;
+            /* Replace with your left image URL */
+        }
+
+        .column.right {
+            background-image: url('https://images.pexels.com/photos/1805412/pexels-photo-1805412.jpeg?cs=srgb&dl=pexels-criativithy-1805412.jpg&fm=jpg');
+            /* Replace with your right image URL */
+        }
+
+        /* Add styles for content within the columns */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            /* Text color */
+            z-index: 1;
+            /* Ensure text is above the image */
+        }
+
+        /* Add a hover effect to make the image clear */
+        .column:hover {
+            transform: scale(1.1);
+            /* Zoom in by 10% */
+            filter: blur(0);
+            /* Remove blur effect */
+        }
+
+        /* Add additional styling as needed */
+    </style>
+</head>
+
+<body>
+    <div class="column left">
+        <div class="content">
+            <!-- Left column content goes here -->
+            <h1>Mens Fashion</h1>
+            <button>Shop more</button>
+        </div>
+    </div>
+    <div class="column right">
+        <div class="content">
+            <!-- Right column content goes here -->
+            <h1>Womens Fashion</h1>
+            <button>shop more</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        .signup-container {
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        input {
+            width: 93%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .column {
+            flex: 1;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: transform 0.3s, filter 0.3s;
+            /* Add smooth transitions */
+            /* Apply initial blur effect */
+        }
+
+        .column.left {
+            background: black
+                /* Replace with your left image URL */
+        }
+
+        /* Add styles for content within the columns */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            /* Text color */
+            z-index: 1;
+            /* Ensure text is above the image */
+        }
+
+        /* Add animation for text */
+        .animated-text {
+            font-size: 3em;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        .animated-text-description {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInDown 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="column left">
+        <div class="content">
+            <!-- Animated text for the left column -->
+            <h1 class="animated-text">Fashion</h1>
+            <p class="animated-text-description">Stay stylish with the latest trends.</p>
+        </div>
+    </div>
+
+    <div class="column right">
+        <div class="content">
+            <div class="signup-container">
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <input type="text" id="userName" placeholder="User Name" required>
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" placeholder="Last Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var name = document.getElementById("userName").value;
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var userData = {
+                name: name,
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                password: password
+            };
+            localStorage.setItem("userData", JSON.stringify(userData));
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+
+</html>
