@@ -19,25 +19,21 @@
         }
         .left-screen{
             flex: 1;
-            padding: 20px;
-            background: #872657;
-            background: url(https://www.udacity.com/blog/wp-content/uploads/2020/05/softwareengineer-compress.jpeg);
-            filter:sepia(100%);
-            background-size: cover;
-            height: 100%;
-            background-position: 50% 15%;
-            min-height: 450px;
+            height: 100vh;
+          
+           
+            
         }
         .right-screen{
             flex: 1;
             height: 100vh;
         }
         .cont{
-            min-height: 450px;
+            
             display: flex;
             flex-direction: column;
             height: 100%;
-        }
+      }
         .cont nav{
             flex: 1;
             display: flex;
@@ -46,11 +42,12 @@
         .cont .design{
             display: flex;
             flex: 8;
-            background: white;
             justify-content: center;
             align-items: center;
             text-align: center;
         }
+    
+        
         footer{
             flex: 5;
             background: white;
@@ -70,7 +67,7 @@
         .des-wrk button{
             padding-top: 10px;
             padding-bottom: 10px;
-            background: white;
+            
             border: 1px solid;
             outline: none;
             font-weight: bold;
@@ -89,27 +86,36 @@
             color: black;
             text-decoration: none;
         }
+        .img{
+            background: url(https://i.pinimg.com/474x/04/a0/2f/04a02f93c136d86d6d54e1b29fbad9d6.jpg);
+        }
+        .img1{
+            background: url(https://images.pexels.com/photos/1805412/pexels-photo-1805412.jpeg?cs=srgb&dl=pexels-criativithy-1805412.jpg&fm=jpg);
+        }
+        
     </style>
 </head>
 <body>
     <div class="split-container">
-        <div class="left-screen">
-            <h1>SPLIT</h1>
+        <div class="left-screen" >
+            <div class="cont img">
+            <div class="design  des-wrk">
+            <h3>Womens Fashion</h3>
+                        <button>Shop More</button>
+                    </div>   
+                </div> 
         </div>
         <div class="right-screen">
-            <div class="cont">
+            <div class="cont img1">
             <nav class="nav-one">
                 <div class="left">
-                    <h2> <a href="#">SCREEN</a></h2>
-                </div>
-                <div class="right">
-                    <i class="fa fa-bars"></i>
-                </div>
+                    <h2> <a href="#">LOGIN / SiGN-UP</a></h2>
+                    </div>
             </nav>
                 <div class="design">
-                    <div class="des-wrk">
-                        <h1>A designer <br> who creates shit <br>that somehow works!</h1>
-                    <button>See my works</button>
+                    <div class="des-wrk img1">
+                        <h3>Womens Fashion</h3>
+                        <button>Shop More</button>
                     </div>
                 </div>
             </div>
