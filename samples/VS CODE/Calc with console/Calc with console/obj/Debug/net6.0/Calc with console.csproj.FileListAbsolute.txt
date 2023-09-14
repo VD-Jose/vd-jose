@@ -1,0 +1,14 @@
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\bin\Debug\net6.0\Calc with console.exe
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\bin\Debug\net6.0\Calc with console.deps.json
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\bin\Debug\net6.0\Calc with console.runtimeconfig.json
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\bin\Debug\net6.0\Calc with console.dll
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\bin\Debug\net6.0\Calc with console.pdb
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\obj\Debug\net6.0\Calc with console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\obj\Debug\net6.0\Calc with console.AssemblyInfoInputs.cache
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\obj\Debug\net6.0\Calc with console.AssemblyInfo.cs
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\obj\Debug\net6.0\Calc with console.csproj.CoreCompileInputs.cache
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\obj\Debug\net6.0\Calc with console.dll
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\obj\Debug\net6.0\refint\Calc with console.dll
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\obj\Debug\net6.0\Calc with console.pdb
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\obj\Debug\net6.0\Calc with console.genruntimeconfig.cache
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc with console\Calc with console\obj\Debug\net6.0\ref\Calc with console.dll
