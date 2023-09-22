@@ -18,13 +18,15 @@ namespace connecttomysql
             conn.Open ();
             string query = "select * from author";
             MySqlCommand cmd = new MySqlCommand (query, conn);
-            MySqlDataReader reader = cmd.ExecuteReader ();  
+            MySqlDataReader reader = cmd.ExecuteReader ();
+            //author author = null;
+            List<author> authors = new List<author> ();
             while (reader.Read ())
             {
-                Console.WriteLine(reader["Author_ID"]);
-                Console.WriteLine(reader["Author_Name"]);
-                Console.WriteLine(reader["Nationality"]); 
+                authors.Add(new author(reader.GetString(0), reader.GetString(1), reader.GetString(2))); 
+                    
             }
+
 
             conn.Close ();
         }
