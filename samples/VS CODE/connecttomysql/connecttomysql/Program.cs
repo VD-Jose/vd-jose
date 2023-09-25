@@ -27,7 +27,10 @@ namespace connecttomysql
                     
             }
 
-
+            foreach (author author in authors)
+            {
+                Console.WriteLine(author.author_ID + " | " + author.author_name + " | " + author.Nationality);
+            }
             conn.Close ();
         }
     }
