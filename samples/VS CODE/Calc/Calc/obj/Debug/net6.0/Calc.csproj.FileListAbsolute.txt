@@ -1,0 +1,14 @@
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\bin\Debug\net6.0\Calc.exe
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\bin\Debug\net6.0\Calc.deps.json
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\bin\Debug\net6.0\Calc.runtimeconfig.json
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\bin\Debug\net6.0\Calc.dll
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\bin\Debug\net6.0\Calc.pdb
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\obj\Debug\net6.0\Calc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\obj\Debug\net6.0\Calc.AssemblyInfoInputs.cache
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\obj\Debug\net6.0\Calc.AssemblyInfo.cs
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\obj\Debug\net6.0\Calc.csproj.CoreCompileInputs.cache
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\obj\Debug\net6.0\Calc.dll
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\obj\Debug\net6.0\refint\Calc.dll
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\obj\Debug\net6.0\Calc.pdb
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\obj\Debug\net6.0\Calc.genruntimeconfig.cache
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\Calc\Calc\obj\Debug\net6.0\ref\Calc.dll
