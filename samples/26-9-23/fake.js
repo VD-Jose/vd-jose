@@ -1,17 +1,54 @@
 const productContainer = document.querySelector('.product-list');
+// const productImagesContainer = document.querySelector('.product-images');
 
+let products = [];
 fetch('https://fakestoreapi.com/products')
     .then(res => res.json())
-    .then(data => {
-        data.forEach(product => {
-            const productCard = document.createElement('div');
+    .then(data => { 
+        products = data;
+        console.log(products);
+        test (products)
+        // products.forEach(product => {
+            
+        //     const productCard = document.createElement('div');
+        //     productCard.classList.add('product-card');
+
+        //      const productImage = document.createElement ('div');
+        //      productImage.classList.add('product-image');
+
+        //      const image = document.createElement('img');
+        //      image.src = product.image;
+        //     image.alt = product.title;
+
+        //     const title = document.createElement('div');
+        //     title.classList.add('product-title');
+        //     title.textContent = product.title;
+
+        //     const price = document.createElement('div');
+        //     price.classList.add('product-price');
+        //     price.textContent = `$${product.price.toFixed(2)}`;
+            
+            
+
+            
+        //     productCard.appendChild(title);
+        //     // productImagesContainer.appendChild(productImage);
+        //     productImage.appendChild(image);
+        //     productCard.appendChild(productImage);      
+        //     productCard.appendChild(price);
+        //     productContainer.appendChild(productCard);
+        // });
+    });
+    function test (products){
+        products.forEach(product => {
+    const productCard = document.createElement('div');
             productCard.classList.add('product-card');
+            productCard.id = product.id
+             const productImage = document.createElement ('div');
+             productImage.classList.add('product-image');
 
-            const productImage = document.createElement (`div`);
-            productImage.classList.add(`product-image`);
-
-            const image = document.createElement('img');
-            image.src = product.image;
+             const image = document.createElement('img');
+             image.src = product.image;
             image.alt = product.title;
 
             const title = document.createElement('div');
@@ -22,51 +59,66 @@ fetch('https://fakestoreapi.com/products')
             price.classList.add('product-price');
             price.textContent = `$${product.price.toFixed(2)}`;
 
-            
+            const description = document.createElement ('div')
+            description.classList.add('product-description');
+            title.textContent = product.description;
 
-            productImage.appendChild(image);
-            productImagesContainer.appendChild(productImage);
-            productCard.appendChild(title);
-            productCard.appendChild(price);
-            productContainer.appendChild(productCard);
-        });
+            const category = document.createElement ('div')
+            category.classList.add('product-category');
+            title.textContent = product.category;
+
+                // Create the delete button
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.classList.add('delete-button');
+
+    // Attach a click event listener to the delete button
+    deleteButton.addEventListener('click', () => {
+        // Call the deleteProduct function with the product's ID
+        // deleteProduct(product.id);
+        console.log(product.id)
+        fetch(`https://fakestoreapi.com/products/${product.id}`,{
+            method:"DELETE"
+        })
+            .then(res=>{
+                res.json().then(e=>{
+                    console.log(e)
+                })
+                let getElement=document.getElementById(product.id)
+                console.log(getElement)
+            getElement.remove()
+            })
     });
 
-    const cartData = {
-        userId: 5,
-        date: '2020-02-03',
-        products: [
-            { productId: 5, quantity: 1 },
-            { productId: 1, quantity: 5 }
-        ]
-    };
+            productCard.appendChild(title);
+            // productImagesContainer.appendChild(productImage);
+            productImage.appendChild(image);
+            productCard.appendChild(productImage);      
+            productCard.appendChild(price);
+            productCard.appendChild(description);
+            productCard.appendChild(category);
+            productContainer.appendChild(productCard);
+            productCard.appendChild(deleteButton);
+        });
+    }
     
-    const requestOptions = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(cartData)
-    };
-    
-    fetch('https://fakestoreapi.com/carts', requestOptions)
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error('Error:', error));
-
-        fetch('https://fakestoreapi.com/products/7',{
-            method:"PUT",
-            body:JSON.stringify(
-                {
-                    title: 'test product',
-                    price: 13.5,
-                    description: 'lorem ipsum set',
-                    image: 'https://i.pravatar.cc',
-                    category: 'electronic'
-                }
-            )
+    const productData = {
+        title: 'test product',
+        price: 13.5,
+        description: 'lorem ipsum set',
+        image: 'https://i.pravatar.cc',
+        category: 'beauty Products'
+    }
+    fetch('https://fakestoreapi.com/products',{
+            method:"POST",
+            headers: {
+                "content-type" : "application/json"
+            },
+            body: JSON.stringify(productData)
         })
-            .then(res=>res.json())
-            .then(json=>console.log(data))
-
-        
+        .then((response) => response.json())
+        .then((data) => {console.log("Success:", data)
+            products.push(data)
+            console.log(products);
+            test(products)
+    })
