@@ -67,15 +67,18 @@ fetch('https://fakestoreapi.com/products')
             category.classList.add('product-category');
             title.textContent = product.category;
 
-                // Create the delete button
+              
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
     deleteButton.classList.add('delete-button');
 
-    // Attach a click event listener to the delete button
+    const addToCartButton = document.createElement('button');
+    addToCartButton.textContent = 'Add to Cart';
+    addToCartButton.classList.add('addToCart-button');
+
+
+    
     deleteButton.addEventListener('click', () => {
-        // Call the deleteProduct function with the product's ID
-        // deleteProduct(product.id);
         console.log(product.id)
         fetch(`https://fakestoreapi.com/products/${product.id}`,{
             method:"DELETE"
@@ -99,6 +102,7 @@ fetch('https://fakestoreapi.com/products')
             productCard.appendChild(category);
             productContainer.appendChild(productCard);
             productCard.appendChild(deleteButton);
+            productCard.appendChild(addToCartButton);
         });
     }
     
