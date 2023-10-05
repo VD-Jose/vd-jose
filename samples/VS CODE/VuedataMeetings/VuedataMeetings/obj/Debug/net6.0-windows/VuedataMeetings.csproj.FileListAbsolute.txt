@@ -1,0 +1,7 @@
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\VuedataMeetings\VuedataMeetings\obj\Debug\net6.0-windows\VuedataMeetings.csproj.AssemblyReference.cache
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\VuedataMeetings\VuedataMeetings\obj\Debug\net6.0-windows\VuedataMeetings.Form1.resources
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\VuedataMeetings\VuedataMeetings\obj\Debug\net6.0-windows\VuedataMeetings.csproj.GenerateResource.cache
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\VuedataMeetings\VuedataMeetings\obj\Debug\net6.0-windows\VuedataMeetings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\VuedataMeetings\VuedataMeetings\obj\Debug\net6.0-windows\VuedataMeetings.AssemblyInfoInputs.cache
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\VuedataMeetings\VuedataMeetings\obj\Debug\net6.0-windows\VuedataMeetings.AssemblyInfo.cs
+C:\Users\Joseph\Desktop\vd-josh\samples\VS CODE\VuedataMeetings\VuedataMeetings\obj\Debug\net6.0-windows\VuedataMeetings.csproj.CoreCompileInputs.cache

@@ -1,0 +1,66 @@
+﻿label,
+input[type="text"],
+select,
+input[type="datetime-local"],
+button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style the form container */
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the Save, Delete, Clear buttons */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the success and error labels */
+#lblSuccessMessage,
+#lblErrorMessage {
+    font-weight: bold;
+}
+
+#lblSuccessMessage {
+    color: green;
+}
+
+#lblErrorMessage {
+    color: red;
+}
+
+/* Style the GridView */
+#gvuserbookings {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    #gvuserbookings th,
+    #gvuserbookings td {
+        padding: 8px;
+        text-align: center;
+    }
+
+    #gvuserbookings th {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+/* Style the LinkButton in GridView */
+#lnkSelect {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+}
