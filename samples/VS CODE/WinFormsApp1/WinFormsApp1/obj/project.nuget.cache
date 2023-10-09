@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZJPUjwY7OykjmDWkbVmDN57AOpGnSoeNrHw0WiiT4tKzWspvy1ET2qRC11sY2ZnTRLTufBYAiUfgQn0UTxDVAA==",
+  "dgSpecHash": "BreElcG9ZytfXy2SQzJ3zJP1yPUOXvdTgsV82az8/uhx54tpq7OLfeMvCii4Yfb+pZ5uP4zH0ZgN3thiTovzcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joseph\\Desktop\\vd-josh\\samples\\VS CODE\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\Joseph\\Documents\\vd-jose\\samples\\VS CODE\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joseph\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Joseph\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
