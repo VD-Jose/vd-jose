@@ -1,0 +1,37 @@
+
+//- //inline CSS
+//- doctype html
+//- html
+//-   head
+//-     title= title
+//-   body
+//-     - const textColor = 'blue';
+//-     - const bgColor = 'yellow';
+//-     h1(style=`color: ${textColor};`)= message
+//-     div(style=`background-color: ${bgColor}; padding: 10px;`)= message + ' your message added to DIV'
+
+//- ( OR )
+
+//External CSS
+doctype html
+html
+  head
+    title = title 
+    link(rel='stylesheet', href='style.css') 
+  body
+    //- h1(class ='highlighted-text1')=title1 
+    //- h1(class='highlighted-text')= 'FirstName:' + FirstName
+    //- h1(class='highlighted-text')= 'LastName:' + LastName
+    //- h1(class='highlighted-text')= 'DOB:' + DOB
+    
+    <div>
+    <form>
+    <h1 style = "color:red">#{title1} </h1>
+    <h1 class= 'highlighted-text'> First Name: #{FirstName} </h1>
+    <h1 class='highlighted-text'> Last Name:  #{LastName} </h1>
+    <h1 class= 'highlighted-text'> Date of Birth: #{DOB} </h1>
+    </form> 
+     </div>  
+
+
+

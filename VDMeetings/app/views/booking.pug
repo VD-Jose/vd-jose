@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Booking Page
+  body
+    h1 Booking Page
+    form(action="/submit-booking", method="POST")
+      label(for="emp_name") Employee Name:
+      input(type="text", id="emp_name", name="emp_name", required)
+      
+      label(for="room_name") Room Name:
+      input(type="text", id="room_name", name="room_name", required)
+      
+      label(for="date") Date:
+      input(type="date", id="date", name="date", required)
+      
+      label(for="start_time") Start Time:
+      input(type="time", id="start_time", name="start_time", required)
+      
+      label(for="end_time") End Time:
+      input(type="time", id="end_time", name="end_time", required)
+      
+      button(type="submit") Submit

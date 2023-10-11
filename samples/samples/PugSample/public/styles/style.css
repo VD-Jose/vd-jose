@@ -1,0 +1,16 @@
+/* styles.css */
+.highlighted-text {
+  color: rgb(76, 0, 255);
+  font-weight: bold;
+  text-align: center;
+  
+
+}
+body{
+  background-color:darkgoldenrod;
+  text-align: center;
+  
+}
+.highlighted-text1{
+  color: red;
+}
