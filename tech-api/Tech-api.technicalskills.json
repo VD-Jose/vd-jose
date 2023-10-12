@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "65282e77c628a0f9ba74c47a"
+  },
+  "skill": ".NET"
+},
+{
+  "_id": {
+    "$oid": "65282e91c628a0f9ba74c47c"
+  },
+  "skill": "Java"
+},
+{
+  "_id": {
+    "$oid": "65282ea4c628a0f9ba74c47e"
+  },
+  "skill": "MERN"
+},
+{
+  "_id": {
+    "$oid": "65282ecac628a0f9ba74c480"
+  },
+  "skill": "ReactJS"
+},
+{
+  "_id": {
+    "$oid": "65282eddc628a0f9ba74c482"
+  },
+  "skill": "NodeJS"
+},
+{
+  "_id": {
+    "$oid": "65282f86c628a0f9ba74c484"
+  },
+  "skill": "AngularJS"
+},
+{
+  "_id": {
+    "$oid": "65282fa4c628a0f9ba74c486"
+  },
+  "skill": "Flutter"
+},
+{
+  "_id": {
+    "$oid": "65282fc3c628a0f9ba74c488"
+  },
+  "skill": "ReactNative"
+},
+{
+  "_id": {
+    "$oid": "65282fecc628a0f9ba74c48a"
+  },
+  "skill": "iOS-Swift"
+},
+{
+  "_id": {
+    "$oid": "65283010c628a0f9ba74c48c"
+  },
+  "skill": "Android - Kotlin"
+},
+{
+  "_id": {
+    "$oid": "6528302fc628a0f9ba74c48e"
+  },
+  "skill": "AI"
+},
+{
+  "_id": {
+    "$oid": "65283071c628a0f9ba74c490"
+  },
+  "skill": "ML"
+},
+{
+  "_id": {
+    "$oid": "65283096c628a0f9ba74c492"
+  },
+  "skill": "Data Science"
+},
+{
+  "_id": {
+    "$oid": "652830acc628a0f9ba74c494"
+  },
+  "skill": "Data Analyst"
+},
+{
+  "_id": {
+    "$oid": "652830c9c628a0f9ba74c496"
+  },
+  "skill": "Data Engineer"
+}]
