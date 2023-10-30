@@ -1,11 +1,12 @@
 
 import './App.css';
-import Counter from './Counter';
-//import ClassEvent from './ClassEvent';
+import CounterRed from './Components/Reducer';
+
+
 
 function App() {
   return (
-    <Counter></Counter>
+    <CounterRed></CounterRed>
   );
 }
 
