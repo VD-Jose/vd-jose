@@ -1,0 +1,17 @@
+li {
+height: 250px;
+width: 300px;
+background-color: aqua;
+color: white;
+padding: 20px;
+border: 1px solid;
+border-radius: 10px;
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+
+li{
+    font-size: 14px;
+    line-height: 1.4;
+}

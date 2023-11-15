@@ -1,12 +1,12 @@
-
 import './App.css';
-import CounterRed from './Components/Reducer';
+import SampleApi from './Components/SampleApi';
+import Timer from './Components/Timer';
 
 
 
 function App() {
   return (
-    <CounterRed></CounterRed>
+    <Timer/>
   );
 }
 
